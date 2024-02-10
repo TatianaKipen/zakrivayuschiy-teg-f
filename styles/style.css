@@ -32,7 +32,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  margin: 100px auto; 
+  margin: 100px auto;
   inline-size: var(--inline-size);
   background-color: var(--background-color);
   font-family: var(--accent-font), 'Courier New', fantasy;
@@ -127,7 +127,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto; 
+  margin: auto;
   inline-size: var(--inline-size);
 }
 
@@ -331,7 +331,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  padding-block-end: 103px;  
+  padding-block-end: 103px;
   inline-size: var(--inline-size);
 }
 
