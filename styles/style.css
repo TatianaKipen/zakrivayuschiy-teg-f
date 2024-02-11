@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), 'Arial', sans-serif;
+  font-family: var(--main-font, 'Arial', sans-serif);
   font-variation-settings: 'wght' var(--main-font-weight);
   color: var(--main-color);
   background-color: var(--background-color);
@@ -35,7 +35,7 @@
   margin: 100px auto;
   inline-size: var(--inline-size);
   background-color: var(--background-color);
-  font-family: var(--accent-font), 'Courier New', fantasy;
+  font-family: var(--accent-font, 'Papyrus', fantasy);
   border: 2px solid var(--main-color);
 }
 
@@ -66,7 +66,7 @@
 }
 
 .theme-menu__button {
-  font-size: var(--accent-font-size);
+  font-size: var(--accent-font-size, 14px);
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
@@ -142,7 +142,7 @@
 }
 
 .card__title {
-  font-size: var(--main-font-size);
+  font-size: var(--main-font-size, 18px);
   font-variation-settings: 'wght' var(--title-font-weight);
   line-height: normal;
   align-self: stretch;
@@ -164,10 +164,10 @@
   color: var(--main-color);
   mix-blend-mode: hard-light;
   opacity: 0.5;
-  font-family: var(--accent-font), 'Courier New', fantasy;
+  font-family: var(--accent-font, 'Papyrus', fantasy);
   font-weight: 400;
   line-height: normal;
-  font-size: var(--accent-font-size);
+  font-size: var(--accent-font-size, 14px);
   text-shadow: 0 1px var(--background-color),
                1px 0 var(--background-color),
                0 -1px var(--background-color),
@@ -226,7 +226,7 @@
 }
 
 .card__text {
-  font-size: var(--main-font-size);
+  font-size: var(--main-font-size, 18px);
   font-style: normal;
   line-height: 21px;
   margin: 25px;
@@ -273,8 +273,8 @@
   cursor: pointer;
   border: 2px solid var(--main-color);
   transition: box-shadow ease 0.3s;
-  font-family: var(--accent-font), "Courier New", fantasy;
-  font-size: var(--accent-font-size);
+  font-family: var(--accent-font, 'Papyrus', fantasy);
+  font-size: var(--accent-font-size, 14px);
   font-weight: 400;
 }
 
@@ -319,9 +319,9 @@
 .button__text {
   position: relative;
   z-index: 1;
-  font-family: var(--accent-font), "Courier New", fantasy;
+  font-family: var(--accent-font, 'Papyrus', fantasy);
   color: var(--button-text-color);
-  font-size: var(--accent-font-size);
+  font-size: var(--accent-font-size, 14px);
   font-weight: 400;
   line-height: 12.6px;
   mix-blend-mode: difference;
@@ -357,7 +357,7 @@
   mix-blend-mode: difference;
 }
 
-.dialog {
+.dialog[open] {
   inline-size: clamp(341px, 100%, 357px);
   background-color: var(--background-color);
   margin: auto;
@@ -371,8 +371,8 @@
 
 .dialog__content {
   color: var(--main-color);
-  font-family: var(--accent-font), "Courier New", fantasy;
-  font-size: var(--accent-font-size);
+  font-family: var(--accent-font, 'Papyrus', fantasy);
+  font-size: var(--accent-font-size, 14px);
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
